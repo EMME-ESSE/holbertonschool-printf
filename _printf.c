@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	va_list arg;
 	int i = 0, b = 0; 
-	int *str;
+	int (*f)(va_list arg);
 
 	va_start(arg, format);
 	while (!format)
@@ -27,9 +27,9 @@ int _printf(const char *format, ...)
 		}
 		if (format[i] == 's')
 		{
-			str = va_arg(arg, char *);
-			for (b = 0; str[b] != '\0'; b++)
-			_putchar(str[b]);
+			f = va_arg(arg, char *);
+			for (b = 0; f[b] != '\0'; b++)
+			_putchar(f[b]);
 		}
 	}
 	return(b);
