@@ -6,7 +6,7 @@
  *   * Return: operator
  *    * @prin: chars digited by the user 
 **/
-int (*get_op_func(char *prin))
+int (*get_op_func(const char *prin))(va_list arg)
 {
 	op_t ops[] = {
 		{"%", op_mod},
