@@ -1,36 +1,44 @@
 #include "main.h"
 /**
- *
- *void _runprintf(...);
-**/
-
-
-
-
-
+ * _printf - function that produces output according to a format.
+ * @format: is a character string.
+ * Return: the number of characters printed.
+ **/
 int _printf(const char *format, ...)
 {
+	int i = 0, counter = 0;
 	va_list arg;
-	int i = 0, b = 0; 
-	int (*f)(va_list arg);
+	int (*f)(va_list);
 
-	va_start(arg, format);
-	while (!format)
+	if (format == NULL)
 		return (-1);
-	while (format[i] == '%')
-	{	
-		i++;
-		b++;
-		if (format[i] == 'c')
+	va_start(arg, format);
+	while (format[i] != '\0')
+	{
+		while (format[i] != '%' && format[i] != '\0')
 		{
-			_putchar(va_arg(arg, int));
+			_putchar(format[i]);
+			counter++;
+			i++;
 		}
-		if (format[i] == 's')
+		if (format[i] == '\0')
+			return (counter);
+		f = get_op_func(&format[i + 1]);
+		if (f != NULL)
 		{
-			f = va_arg(arg, char *);
-			for (b = 0; f[b] != '\0'; b++)
-			_putchar(f[b]);
+			counter += f(arg);
+			i += 2;
+			continue;
 		}
+		if (format[i + 1] == '\0')
+			return (-1);
+		_putchar(format[i]);
+		counter++;
+		if (format[i + 1] == '%')
+			i += 2;
+		else
+			i++;
 	}
-	return(b);
-}	
+	va_end(arg);
+	return (counter);
+}
