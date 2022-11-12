@@ -32,7 +32,7 @@ of [holberton-school-low_level_programming](https://github.com/search?q=holberto
 
 [[Back to the top](#Content)
 ## Flowchart
-<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/630b5d61-fa72-49ab-b3d5-5a892a647d38" id="uc18SWBncHxH"></iframe></div>
+![Flowcharts](https://user-images.githubusercontent.com/113596153/201496100-eddafe02-e590-4617-aeb7-685bbb6bcb41.jpeg)
 
 
 [Back to the top](#proyecto-de-blog-para-coderhouse)
