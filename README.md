@@ -34,42 +34,6 @@ of [holberton-school-low_level_programming](https://github.com/search?q=holberto
 ## Flowchart
 ![Flowcharts](https://user-images.githubusercontent.com/113596153/201496100-eddafe02-e590-4617-aeb7-685bbb6bcb41.jpeg)
 
-
-[Back to the top](#proyecto-de-blog-para-coderhouse)
-## Estructura del proyecto
-
-* Carpeta blog del proyecto<br>
-  Contiene las views para renderizar el inicio con todos sus posts
-
-* Static Folder<br>
-  Se creo usando el comando collectstatic
-
-* Carpeta media<br>
-  En esta carpeta se suben todos las imagenes de post como tambien las imagenes de perfil de cada usuario.
-
-* Carpeta template <br>
-  Se crearon templates bases y se creo una carpeta include donde se separo los contenidos de cada pagina separandolo en sidebar, secciones principales, navbar, footer
-
-  El proyecto se dividio en tres app diferentes. Estas son:
-* Mensajes
-  - Modelo Mensajes
-  - Las views para crear, ver mensajes
-  - Formularios para crear mensajes
-
-* Users
-
-  - Modelo Perfil
-  - Views para iniciar sesion, registrarse, cerrar sesion y editar perfil
-
-
-* Blogapp
-  - Modelos categorias, tag, escritor, post y comentarios
-  - Views agregar post, actualizar post, ver post, buscar post
-  - Formularios comentarios y post
-
-
-[Back to the top](#proyecto-de-blog-para-coderhouse)
-
-
+[[Back to the top](#Content)
 
 ##  
