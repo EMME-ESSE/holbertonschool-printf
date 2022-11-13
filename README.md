@@ -34,6 +34,7 @@ of [holberton-school-low_level_programming](https://github.com/search?q=holberto
 ## Description
 
 It is a function that selects a stablished format of characters to print them and few cases that are not posible to print or might print an error
+
 [Back to the top](#Content)
 ## Flowchart
 ![Flowcharts](https://user-images.githubusercontent.com/113596153/201496100-eddafe02-e590-4617-aeb7-685bbb6bcb41.jpeg)
